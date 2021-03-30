@@ -1,22 +1,37 @@
 ﻿@font-face {
     font-family: Merriweather;
-    src: url(Merriweather-Regular.ttf);
+    src: url(Merriweather-Regular.ttf); /* bruh do them all, lazy -_- */
 }
-*{
+
+* {
     font-family: Merriweather;
+    text-align: center;
 }
-header{
-
+html {
+    background: #000;
 }
-main{
-
+body {
+    background: linear-gradient(#ccc, #777); /* TODO: js bb */
+    padding: 1em;
 }
-div{
 
+ul {
+    display: inline-block;
+    list-style-type: '> ';
 }
-nav{
-
+h2 {
+    font-weight: normal;
 }
-article{
 
+a:link {
+    color: #000;
+}
+a:visited {
+    color: #000;
+}
+a:hover {
+    color: #666;
+}
+a:active {
+    color: #900;
 }
