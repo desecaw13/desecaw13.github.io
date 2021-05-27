@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background: linear-gradient(#ccc, #777);
+    background: linear-gradient(rgb(191, 191, 191), rgb(64, 64, 64));
     font-size: 100%;
     padding: 1em;
 }
