@@ -8,15 +8,15 @@ function evilFlip() {
     else { styleLink.disabled = true; };
 }
 
-/*/ background animation
-let gtop = 191
-let gbot = 64
-let i = 1
+// background animation
+let gtop = 191;
+let gbot = 64;
+let i = 1;
 setInterval(function () {
     if (gtop >= 255) { i = -1 } else if (gtop <= 0) { i = 1 };
     if (gbot <= 0) { i = -1 } else if (gbot >= 255) { i = 1 };
     //document.getElementsByTagName("iframe")[for].style.background
     document.body.style.background = `linear-gradient(rgb(${gtop},${gtop},${gtop}), rgb(${gbot},${gbot},${gbot}))`;
-    gtop += i
-    gbot -= i
-}, 100);*/
+    gtop += i;
+    gbot -= i;
+}, 100);
