@@ -1,6 +1,6 @@
 ﻿@font-face {
     font-family: Merriweather;
-    src: url(Merriweather-Regular.ttf); /* bruh do them all, lazy -_- */
+    src: url(Merriweather-Regular.ttf);
 }
 
 * {
@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background: linear-gradient(#ccc, #777); /* TODO: js bb */
+    background: linear-gradient(#ccc, #777);
     font-size: 100%;
     padding: 1em;
 }
@@ -23,7 +23,7 @@ ul {
     list-style-type: '> ';
 }
 
-h2 {
+header {
     font-weight: normal;
 }
 
@@ -41,6 +41,13 @@ a:hover {
 
 a:active {
     color: #900;
+}
+
+/* custom */
+.cert {
+    min-height: 12em;
+    height: auto;
+    width: auto;
 }
 
 /* switch css */
