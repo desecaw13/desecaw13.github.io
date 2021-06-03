@@ -9,13 +9,13 @@ function evilFlip() {
 }
 
 // background animation (todo 'breathing' effect)
-let gtop = 191;
-let gbot = 64;
+let gIn = 191; //light
+let gOut = 64; //dark
 let i = 1;
 setInterval(function () {
-    if (gtop >= 255) { i = -1 } else if (gtop <= 0) { i = 1 };
-    if (gbot <= 0) { i = -1 } else if (gbot >= 255) { i = 1 };
-    document.body.style.background = `linear-gradient(rgb(${gtop},${gtop},${gtop}), rgb(${gbot},${gbot},${gbot}))`;
-    gtop += i;
-    gbot -= i;
+    if (gIn >= 127.5) { i = -1 } else if (gIn <= 0) { i = 1 };
+    if (gOut <= 127.5) { i = -1 } else if (gOut >= 255) { i = 1 };
+    document.body.style.background = `linear-gradient(rgb(${gIn},${gIn},${gIn}), rgb(${gOut},${gOut},${gOut}), rgb(${gIn},${gIn},${gIn}))`;
+    gIn += i;
+    gOut -= i;
 }, 100);
