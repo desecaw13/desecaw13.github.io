@@ -19,3 +19,8 @@ setInterval(function () {
     gIn += i;
     gOut -= i;
 }, 100);
+
+//cool art thing
+setInterval(function () {
+    document.getElementById('airt').src = document.getElementById('airt').src;
+}, 10000);
