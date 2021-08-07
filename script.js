@@ -20,7 +20,8 @@ setInterval(function () {
     gOut -= i;
 }, 100);
 
-//cool art thing
+/*cool art thing
 setInterval(function () {
     document.getElementById('airt').src = document.getElementById('airt').src;
 }, 10000);
+*/

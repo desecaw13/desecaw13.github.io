@@ -23,10 +23,6 @@ ul {
     list-style-type: '> ';
 }
 
-header {
-    font-weight: normal;
-}
-
 a:link {
     color: #000;
 }
@@ -50,13 +46,15 @@ a:active {
     width: auto;
 }
 
-#awrap {
+/*
+    #awrap {
     transform: scale(0.5);
 }
 #airt {
     width: 512px;
     height: 512px;
 }
+*/
 
 /* switch css */
 .switch {
