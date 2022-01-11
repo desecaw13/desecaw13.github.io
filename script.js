@@ -8,7 +8,7 @@ function evilFlip() {
     else { styleLink.disabled = true; };
 }
 
-// background animation (todo 'breathing' effect)
+// background animation (todo: 'breathing' effect)
 let gIn = 191; //light
 let gOut = 64; //dark
 let i = 1;
@@ -19,9 +19,3 @@ setInterval(function () {
     gIn += i;
     gOut -= i;
 }, 100);
-
-/*cool art thing
-setInterval(function () {
-    document.getElementById('airt').src = document.getElementById('airt').src;
-}, 10000);
-*/
