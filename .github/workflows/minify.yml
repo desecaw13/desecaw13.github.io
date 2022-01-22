@@ -5,16 +5,14 @@ name: minify-page
 on:
   # Triggers the workflow on push events but only for the main branch
   push:
-    branches: [ main ]
+    branches: main
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -27,8 +25,15 @@ jobs:
       - name: Minify Action
         uses: anthonyftwang/minify-action@v1.0.1
 
-      # Auto-commit to repository
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Minify source code
-          branch: gh-pages
+      # Commit to gh-pages
+      - uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: gh-pages
+          FOLDER: .
+          MESSAGE: "Build: ({sha}) {msg}"
+
+#      - uses: stefanzweifel/git-auto-commit-action@v4
+#        with:
+#          commit_message: Minify source code
+#          branch: gh-pages
