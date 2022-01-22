@@ -31,6 +31,7 @@ jobs:
           REPO: self
           BRANCH: gh-pages
           FOLDER: .
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MESSAGE: "Build: ({sha}) {msg}"
 
 #      - uses: stefanzweifel/git-auto-commit-action@v4
