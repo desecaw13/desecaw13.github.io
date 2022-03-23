@@ -143,3 +143,13 @@ main {
     font-family: Merriweather;
     src: url(Merriweather-Regular.ttf);
 }
+
+main {
+	font-family: Merriweather, Times, serif;
+}
+
+#webring {
+	border: 1px solid black;
+	max-width: 100%;
+	height: 4.5rem;
+}
